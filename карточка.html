@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин компьютерных комплектующих</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart">
+        <button class="cart-btn">Корзина (<span id="cart-count">0</span>)</button>
+        <div class="cart-content hidden">
+            <h3>Ваша корзина</h3>
+            <div class="cart-items" id="cart-items">
+                <!-- Товары будут добавляться сюда -->
+            </div>
+            <div class="cart-total">Итого: <span id="cart-total">0</span> руб.</div>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Каталог компьютерных комплектующих</h1>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">Все товары</button>
+            <button class="filter-btn" data-category="videocard">Видеокарты</button>
+            <button class="filter-btn" data-category="processor">Процессоры</button>
+            <button class="filter-btn" data-category="memory">Оперативная память</button>
+        </div>
+        
+        <div class="products" id="products">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+    </div>
+    <div class="cart-content hidden">
+        <h3>Ваша корзина</h3>
+        <div class="cart-items" id="cart-items">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-total">Итого: <span id="cart-total">0</span> руб.</div>
+        <button class="checkout-btn">Оформить заказ</button>
+        <button class="cancel-btn">Отменить заказ</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
